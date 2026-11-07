@@ -1,0 +1,142 @@
+{
+  "configuration": {
+    "source": "deterministic_synthetic",
+    "height": 96,
+    "width": 128,
+    "scale": 2,
+    "downsampling": "non-overlapping area mean",
+    "noise_std_depth_units": 0.0,
+    "missing_rate": 0.0,
+    "random_seed": 17,
+    "ground_truth_valid_fraction": 1.0
+  },
+  "metric_definitions": {
+    "rmse_mae": "computed over originally valid finite ground-truth pixels",
+    "psnr": "10*log10(depth_range^2/MSE), fixed depth_range=10.0",
+    "ssim": "masked local Gaussian SSIM, 7x7 window, sigma=1.5, population covariance",
+    "edges": "central-difference gradient magnitude threshold=0.1 depth units/pixel; symmetric matching tolerance=1 pixel; unmatched predictions are false positives",
+    "downsampling": "non-overlapping area mean over scale x scale cells; sensor noise and missing samples applied afterward"
+  },
+  "timing_configuration": {
+    "warmup_runs": 1,
+    "timed_runs": 5,
+    "reported_statistic": "median",
+    "timing_categories": [
+      "interpolation_only",
+      "complete_filtering_pipeline"
+    ]
+  },
+  "timings": {
+    "interpolation_only": {
+      "nearest": {
+        "median_seconds": 1.079996582120657e-05,
+        "samples_seconds": [
+          3.3699965570122004e-05,
+          1.190003240481019e-05,
+          1.079996582120657e-05,
+          1.0600022505968809e-05,
+          1.0699965059757233e-05
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      "bilinear": {
+        "median_seconds": 1.7400016076862812e-05,
+        "samples_seconds": [
+          2.3600005079060793e-05,
+          2.099998528137803e-05,
+          1.7400016076862812e-05,
+          1.729995710775256e-05,
+          1.4699995517730713e-05
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      "bicubic": {
+        "median_seconds": 2.6799971237778664e-05,
+        "samples_seconds": [
+          2.6799971237778664e-05,
+          2.6900030206888914e-05,
+          2.6399968191981316e-05,
+          2.7399975806474686e-05,
+          2.400000812485814e-05
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      }
+    },
+    "complete_filtering_pipeline": {
+      "joint_bilateral": {
+        "median_seconds": 0.026324099977500737,
+        "samples_seconds": [
+          0.027184200007468462,
+          0.026297599950339645,
+          0.026017500029411167,
+          0.026324099977500737,
+          0.0265961000113748
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      "guided": {
+        "median_seconds": 0.0006624999805353582,
+        "samples_seconds": [
+          0.0006624999805353582,
+          0.0010421000188216567,
+          0.0007123000104911625,
+          0.0006388999754562974,
+          0.0006448000203818083
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      }
+    }
+  },
+  "metrics": {
+    "nearest": {
+      "rmse": 0.20840309768581183,
+      "mae": 0.04970218372181989,
+      "psnr": 33.62191660017038,
+      "ssim": 0.9499684620452689,
+      "edge_precision": 1.0,
+      "edge_recall": 0.990990990990991,
+      "edge_f1": 0.9954751131221719
+    },
+    "bilinear": {
+      "rmse": 0.18338264293478498,
+      "mae": 0.05240814138475495,
+      "psnr": 34.73283544904199,
+      "ssim": 0.9566001508373332,
+      "edge_precision": 0.8720483250961011,
+      "edge_recall": 0.9858429858429858,
+      "edge_f1": 0.9254607301840182
+    },
+    "bicubic": {
+      "rmse": 0.16583250846394487,
+      "mae": 0.05392746966875469,
+      "psnr": 35.6066065972345,
+      "ssim": 0.962381723887944,
+      "edge_precision": 0.7988769780500256,
+      "edge_recall": 0.990990990990991,
+      "edge_f1": 0.8846237843809818
+    },
+    "joint_bilateral": {
+      "rmse": 0.09183803574334996,
+      "mae": 0.05185344906446213,
+      "psnr": 40.739548273082946,
+      "ssim": 0.9902267966474053,
+      "edge_precision": 1.0,
+      "edge_recall": 0.9974259974259975,
+      "edge_f1": 0.9987113402061856
+    },
+    "guided": {
+      "rmse": 0.3634807964748002,
+      "mae": 0.2546968751800402,
+      "psnr": 28.79037057947349,
+      "ssim": 0.8832685492220665,
+      "edge_precision": 0.6269982238010657,
+      "edge_recall": 0.8893178893178894,
+      "edge_f1": 0.7354676668968242
+    }
+  }
+}

@@ -1,0 +1,524 @@
+{
+  "dataset": "NYU Depth V2 supervised fine-tuning",
+  "training_updates_use_split": "train only",
+  "validation_use": "loss-based early stopping and checkpoint selection only",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "duration_seconds": 1754.5500103000086,
+  "peak_gpu_memory_bytes": 240031744,
+  "best_epoch": 30,
+  "best_validation_loss": 0.004375931150379622,
+  "checkpoint": "D:\\EdgeDepth-AI\\models\\checkpoints\\depth_refinement_v3_best.pt",
+  "history_path": "D:\\EdgeDepth-AI\\models\\checkpoints\\training_history_v3.json",
+  "history": [
+    {
+      "epoch": 1,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.006949422484462928,
+        "l1": 0.005144307413870621,
+        "gradient": 0.004020781156683118,
+        "structural": 0.015998395396478522
+      },
+      "validation": {
+        "total": 0.005819896660426159,
+        "l1": 0.004333442952825662,
+        "gradient": 0.0034314235772037543,
+        "structural": 0.012571956011087888
+      }
+    },
+    {
+      "epoch": 2,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005854734672385754,
+        "l1": 0.004341935311625683,
+        "gradient": 0.003528091574743765,
+        "structural": 0.012615528886657465
+      },
+      "validation": {
+        "total": 0.005479733176267384,
+        "l1": 0.004078589695924466,
+        "gradient": 0.0032897507914253694,
+        "structural": 0.011574115780743254
+      }
+    },
+    {
+      "epoch": 3,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005651565119858433,
+        "l1": 0.004189936499222644,
+        "gradient": 0.003445824200533471,
+        "structural": 0.012003451128894428
+      },
+      "validation": {
+        "total": 0.0053030635623278425,
+        "l1": 0.003943129194849128,
+        "gradient": 0.003222241258641722,
+        "structural": 0.011087480317288583
+      }
+    },
+    {
+      "epoch": 4,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005508300914200691,
+        "l1": 0.004081348531861912,
+        "gradient": 0.0033910540029195683,
+        "structural": 0.011583777855636563
+      },
+      "validation": {
+        "total": 0.005178786126401173,
+        "l1": 0.0038493570945701285,
+        "gradient": 0.0031747347774946726,
+        "structural": 0.010714907498192896
+      }
+    },
+    {
+      "epoch": 5,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0054012751757348855,
+        "l1": 0.003999297154493302,
+        "gradient": 0.003352258783185257,
+        "structural": 0.011278266649482385
+      },
+      "validation": {
+        "total": 0.005071386777502499,
+        "l1": 0.003766172354761796,
+        "gradient": 0.0031354946784948536,
+        "structural": 0.010426814932752094
+      }
+    },
+    {
+      "epoch": 6,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0053168271928908505,
+        "l1": 0.003933927047786848,
+        "gradient": 0.0033238694713152244,
+        "structural": 0.011038655554582862
+      },
+      "validation": {
+        "total": 0.005000066482077498,
+        "l1": 0.003711971061287123,
+        "gradient": 0.003109474593790573,
+        "structural": 0.01021453539701321
+      }
+    },
+    {
+      "epoch": 7,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0052422998344185965,
+        "l1": 0.003877592147708689,
+        "gradient": 0.0032936371839458836,
+        "structural": 0.01082596767740617
+      },
+      "validation": {
+        "total": 0.004942217270704129,
+        "l1": 0.003668194276420257,
+        "gradient": 0.003088512597463182,
+        "structural": 0.010037897419560394
+      }
+    },
+    {
+      "epoch": 8,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005178417355618762,
+        "l1": 0.003828075521115987,
+        "gradient": 0.0032736803038900942,
+        "structural": 0.010638435215413945
+      },
+      "validation": {
+        "total": 0.0048677728366140925,
+        "l1": 0.003611622634557409,
+        "gradient": 0.0030592523176302786,
+        "structural": 0.009826742089851915
+      }
+    },
+    {
+      "epoch": 9,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005129252343713862,
+        "l1": 0.0037909931910323834,
+        "gradient": 0.003254794914263693,
+        "structural": 0.010491208660082435
+      },
+      "validation": {
+        "total": 0.004820328774016111,
+        "l1": 0.0035754977996013946,
+        "gradient": 0.0030401930774046557,
+        "structural": 0.009695654185289454
+      }
+    },
+    {
+      "epoch": 10,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0050815212657476,
+        "l1": 0.0037540637390137467,
+        "gradient": 0.003238371755552929,
+        "structural": 0.01035729123853475
+      },
+      "validation": {
+        "total": 0.0047776248699071214,
+        "l1": 0.0035436587473690875,
+        "gradient": 0.0030220173376210788,
+        "structural": 0.00956923608021634
+      }
+    },
+    {
+      "epoch": 11,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.00504062280187723,
+        "l1": 0.003723486986761011,
+        "gradient": 0.0032217960874989346,
+        "structural": 0.010233735000281213
+      },
+      "validation": {
+        "total": 0.004743679089112839,
+        "l1": 0.003517365396387351,
+        "gradient": 0.003010693507479783,
+        "structural": 0.00947280592122756
+      }
+    },
+    {
+      "epoch": 12,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.005008333975320342,
+        "l1": 0.003697983957475649,
+        "gradient": 0.003212124704963194,
+        "structural": 0.010146376818605939
+      },
+      "validation": {
+        "total": 0.004714009727975098,
+        "l1": 0.003495093843748719,
+        "gradient": 0.0029994883241319876,
+        "structural": 0.009380875582541895
+      }
+    },
+    {
+      "epoch": 13,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004970855414047369,
+        "l1": 0.0036704868174878493,
+        "gradient": 0.0031948610759521805,
+        "structural": 0.010033066241574363
+      },
+      "validation": {
+        "total": 0.004674816123901977,
+        "l1": 0.003464408806989408,
+        "gradient": 0.0029835565348899145,
+        "structural": 0.009290363915857008
+      }
+    },
+    {
+      "epoch": 14,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004944065787226149,
+        "l1": 0.003649544500329959,
+        "gradient": 0.0031855618516744683,
+        "structural": 0.009962615729221759
+      },
+      "validation": {
+        "total": 0.0046429351308249186,
+        "l1": 0.003441209537447046,
+        "gradient": 0.0029698180929054177,
+        "structural": 0.009185421596699899
+      }
+    },
+    {
+      "epoch": 15,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0049139086406021935,
+        "l1": 0.003626396413599639,
+        "gradient": 0.0031757769379881944,
+        "structural": 0.009871359864167822
+      },
+      "validation": {
+        "total": 0.004620152616742372,
+        "l1": 0.003423852572610619,
+        "gradient": 0.0029596372404981646,
+        "structural": 0.00912781527396918
+      }
+    },
+    {
+      "epoch": 16,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0048812958400157635,
+        "l1": 0.0036020920480127044,
+        "gradient": 0.003162108915535815,
+        "structural": 0.009773532083293178
+      },
+      "validation": {
+        "total": 0.004591896037773346,
+        "l1": 0.003402026204979019,
+        "gradient": 0.0029488563272726098,
+        "structural": 0.009053114949745505
+      }
+    },
+    {
+      "epoch": 17,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004866717390294345,
+        "l1": 0.003590929278600141,
+        "gradient": 0.0031551533794534283,
+        "structural": 0.00973999542916346
+      },
+      "validation": {
+        "total": 0.00457417608355528,
+        "l1": 0.0033884312934740605,
+        "gradient": 0.0029428627125531524,
+        "structural": 0.00900058228442793
+      }
+    },
+    {
+      "epoch": 18,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004843426099246216,
+        "l1": 0.0035733565336690757,
+        "gradient": 0.0031472763029050154,
+        "structural": 0.009665010126787912
+      },
+      "validation": {
+        "total": 0.0045511347244547775,
+        "l1": 0.003371064646585363,
+        "gradient": 0.002932726777235576,
+        "structural": 0.008937767501749577
+      }
+    },
+    {
+      "epoch": 19,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004826073120670311,
+        "l1": 0.0035600968768363292,
+        "gradient": 0.0031400179768672344,
+        "structural": 0.009619434351253809
+      },
+      "validation": {
+        "total": 0.00453217592466315,
+        "l1": 0.003356750755476842,
+        "gradient": 0.0029246948818912565,
+        "structural": 0.008885029387241656
+      }
+    },
+    {
+      "epoch": 20,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004803384360476578,
+        "l1": 0.0035433537656230467,
+        "gradient": 0.003127925889712975,
+        "structural": 0.009560981997927218
+      },
+      "validation": {
+        "total": 0.0045164974879143074,
+        "l1": 0.0033445956102865736,
+        "gradient": 0.0029181631578172385,
+        "structural": 0.008847221743531912
+      }
+    },
+    {
+      "epoch": 21,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004780993395654848,
+        "l1": 0.003526249865315995,
+        "gradient": 0.003120328641186158,
+        "structural": 0.009493226958614475
+      },
+      "validation": {
+        "total": 0.004494868910982521,
+        "l1": 0.0033283977248116372,
+        "gradient": 0.0029090026817896863,
+        "structural": 0.008784409851656048
+      }
+    },
+    {
+      "epoch": 22,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0047697135464013,
+        "l1": 0.0035175928602920576,
+        "gradient": 0.0031157098716394333,
+        "structural": 0.009463863442622641
+      },
+      "validation": {
+        "total": 0.004481660330309233,
+        "l1": 0.003318623609738339,
+        "gradient": 0.0029028530064571525,
+        "structural": 0.00874647001140617
+      }
+    },
+    {
+      "epoch": 23,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004755224639538137,
+        "l1": 0.00350714643843144,
+        "gradient": 0.0031075504139862343,
+        "structural": 0.009423811940488013
+      },
+      "validation": {
+        "total": 0.004470362970235242,
+        "l1": 0.0033105164794792457,
+        "gradient": 0.0028976177517609494,
+        "structural": 0.008708840620558742
+      }
+    },
+    {
+      "epoch": 24,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004736126845105076,
+        "l1": 0.0034930374531907107,
+        "gradient": 0.0030985666605872365,
+        "structural": 0.009368954464184039
+      },
+      "validation": {
+        "total": 0.004449739173590135,
+        "l1": 0.0032945283537656523,
+        "gradient": 0.0028886611356943935,
+        "structural": 0.00866091071374555
+      }
+    },
+    {
+      "epoch": 25,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004721574272093533,
+        "l1": 0.0034814773836178976,
+        "gradient": 0.0030952780314211577,
+        "structural": 0.00932554775649834
+      },
+      "validation": {
+        "total": 0.004436527804645285,
+        "l1": 0.003284584663933661,
+        "gradient": 0.0028825393174447414,
+        "structural": 0.008626166269729991
+      }
+    },
+    {
+      "epoch": 26,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.0047111769991710125,
+        "l1": 0.003473971340711574,
+        "gradient": 0.0030889804085494025,
+        "structural": 0.009299210977371571
+      },
+      "validation": {
+        "total": 0.00442443996531154,
+        "l1": 0.0032755902054112987,
+        "gradient": 0.002877238397386825,
+        "structural": 0.008590803532903894
+      }
+    },
+    {
+      "epoch": 27,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004694116044695835,
+        "l1": 0.0034609764954953823,
+        "gradient": 0.0030825635394866363,
+        "structural": 0.009249973810225163
+      },
+      "validation": {
+        "total": 0.004414704191108271,
+        "l1": 0.0032682982999660552,
+        "gradient": 0.0028729336407457107,
+        "structural": 0.008563449691741838
+      }
+    },
+    {
+      "epoch": 28,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.00468138622576898,
+        "l1": 0.0034517421006406627,
+        "gradient": 0.0030750133076670972,
+        "structural": 0.00921781625036361
+      },
+      "validation": {
+        "total": 0.004403479163754241,
+        "l1": 0.003260059598320668,
+        "gradient": 0.002868080309475416,
+        "structural": 0.008527989456549697
+      }
+    },
+    {
+      "epoch": 29,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.004670383510583976,
+        "l1": 0.0034429909608695865,
+        "gradient": 0.0030714791511191326,
+        "structural": 0.00919045516342487
+      },
+      "validation": {
+        "total": 0.004389498503850232,
+        "l1": 0.003249483539036472,
+        "gradient": 0.0028617016355925746,
+        "structural": 0.008491791736345955
+      }
+    },
+    {
+      "epoch": 30,
+      "learning_rate": 1e-05,
+      "train": {
+        "total": 0.00465332163269368,
+        "l1": 0.0034306760473211983,
+        "gradient": 0.0030641205772851247,
+        "structural": 0.009132309190038615
+      },
+      "validation": {
+        "total": 0.004375931150379622,
+        "l1": 0.003239282684554474,
+        "gradient": 0.002855299044947285,
+        "structural": 0.008456473970723079
+      }
+    }
+  ],
+  "config": {
+    "source_checkpoint": "D:\\EdgeDepth-AI\\models\\checkpoints\\depth_refinement_v2_best.pt",
+    "dataset": "NYU Depth V2",
+    "training_split": "train",
+    "validation_split": "val (loss selection only; no gradient updates)",
+    "train_samples": 795,
+    "validation_samples": 654,
+    "height": 128,
+    "width": 128,
+    "scale": 4,
+    "depth_range": 10.0,
+    "initial_interpolation": "bicubic",
+    "augmentation": "synchronized horizontal/vertical flips and 90-degree rotations",
+    "optimizer": "AdamW",
+    "learning_rate": 1e-05,
+    "weight_decay": 0.0001,
+    "scheduler": "ReduceLROnPlateau(factor=0.5, patience=2, min_lr=1e-6)",
+    "gradient_clip_norm": 1.0,
+    "loss_weights": {
+      "masked_l1": 1.0,
+      "edge_weighted_gradient": 0.25,
+      "masked_local_ssim": 0.05
+    },
+    "seed": 1234,
+    "batch_size": 8,
+    "epochs_requested": 30,
+    "patience": 5,
+    "device": "cuda"
+  }
+}

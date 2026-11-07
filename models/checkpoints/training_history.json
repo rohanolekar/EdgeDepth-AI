@@ -1,0 +1,66 @@
+
+{
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "best_epoch": 2,
+  "best_validation_loss": 0.015702671837061644,
+  "checkpoint": "D:\\EdgeDepth-AI\\models\\checkpoints\\depth_refinement_best.pt",
+  "history": [
+    {
+      "epoch": 1,
+      "train": {
+        "total": 0.016689627431333065,
+        "l1": 0.013454863103106618,
+        "gradient": 0.012939058244228363
+      },
+      "validation": {
+        "total": 0.015714412089437246,
+        "l1": 0.012619727291166782,
+        "gradient": 0.012378739193081856
+      }
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "total": 0.016663922695443034,
+        "l1": 0.013431111234240234,
+        "gradient": 0.012931245029903948
+      },
+      "validation": {
+        "total": 0.015702671837061644,
+        "l1": 0.012608999386429787,
+        "gradient": 0.012374690733850002
+      }
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "total": 0.016657373635098338,
+        "l1": 0.013424894656054676,
+        "gradient": 0.01292991649825126
+      },
+      "validation": {
+        "total": 0.015704328194260597,
+        "l1": 0.012609865050762892,
+        "gradient": 0.012377852108329535
+      }
+    }
+  ],
+  "config": {
+    "epochs_requested": 3,
+    "batch_size": 4,
+    "train_samples": 32,
+    "validation_samples": 8,
+    "height": 64,
+    "width": 64,
+    "scale": 2,
+    "noise_std": 0.03,
+    "missing_rate": 0.05,
+    "seed": 1234,
+    "learning_rate": 0.001,
+    "base_channels": 16,
+    "depth_range": 10.0,
+    "device": "cuda",
+    "dataset_type": "procedural synthetic scenes"
+  }
+}

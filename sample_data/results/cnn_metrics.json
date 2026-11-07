@@ -1,0 +1,179 @@
+{
+  "dataset": "procedural synthetic test scenes; no real-world validation",
+  "configuration": {
+    "test_samples": 8,
+    "height": 64,
+    "width": 64,
+    "scale": 2,
+    "seed": 1234,
+    "noise_std": 0.03,
+    "missing_rate": 0.05,
+    "depth_range": 10.0,
+    "split": "test (separate deterministic scene seed stream)"
+  },
+  "checkpoint": "D:\\EdgeDepth-AI\\models\\checkpoints\\depth_refinement_best.pt",
+  "device": "cuda",
+  "gpu_name": "NVIDIA GeForce RTX 4050 Laptop GPU",
+  "inference_timing": {
+    "median_seconds_per_image": 0.0015452500083483756,
+    "scene_timings": [
+      {
+        "median_seconds": 0.001771800045389682,
+        "samples_seconds": [
+          0.0017007000278681517,
+          0.0022062999778427184,
+          0.001771800045389682,
+          0.0017189999925903976,
+          0.00255279999691993
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0014771000132896006,
+        "samples_seconds": [
+          0.0014771000132896006,
+          0.002014300029259175,
+          0.0012550000101327896,
+          0.0011827999842353165,
+          0.001563300029374659
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0014836000045761466,
+        "samples_seconds": [
+          0.001972300000488758,
+          0.0014836000045761466,
+          0.0012358000385574996,
+          0.0024238000041805208,
+          0.00136900000507012
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0011669000377878547,
+        "samples_seconds": [
+          0.0012522999895736575,
+          0.0011669000377878547,
+          0.0011354000307619572,
+          0.0013490000274032354,
+          0.0011443999828770757
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0017600000137463212,
+        "samples_seconds": [
+          0.0021740999654866755,
+          0.0021551999961957335,
+          0.0011566000175662339,
+          0.001220200036186725,
+          0.0017600000137463212
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0013207999872975051,
+        "samples_seconds": [
+          0.0013720999704673886,
+          0.0013347999774850905,
+          0.0013207999872975051,
+          0.001129099982790649,
+          0.0011690999963320792
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0016069000121206045,
+        "samples_seconds": [
+          0.0011942999553866684,
+          0.0011239000014029443,
+          0.002578300016466528,
+          0.0018681000219658017,
+          0.0016069000121206045
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      },
+      {
+        "median_seconds": 0.0017577999969944358,
+        "samples_seconds": [
+          0.0019478000467643142,
+          0.0016438000020571053,
+          0.001655499974731356,
+          0.0017577999969944358,
+          0.0018012000364251435
+        ],
+        "warmup_runs": 1,
+        "timed_runs": 5
+      }
+    ],
+    "warmup_runs": 1,
+    "timed_runs": 5,
+    "device": "cuda",
+    "measurement_scope": "model forward only; excludes host/device transfers and preprocessing"
+  },
+  "metrics_macro_average": {
+    "nearest": {
+      "rmse": 0.4005253022474733,
+      "mae": 0.1210779997982172,
+      "psnr": 28.20526075706242,
+      "ssim": 0.9123441502020845,
+      "edge_precision": 0.9338479539980045,
+      "edge_recall": 0.987453159315843,
+      "edge_f1": 0.959783998294223
+    },
+    "bilinear": {
+      "rmse": 0.3898321472170616,
+      "mae": 0.14465544503946148,
+      "psnr": 28.478302931822405,
+      "ssim": 0.9166703470844998,
+      "edge_precision": 0.8836112169387977,
+      "edge_recall": 0.9568470149638,
+      "edge_f1": 0.917610735164711
+    },
+    "bicubic": {
+      "rmse": 0.35660754642104375,
+      "mae": 0.14104964633816053,
+      "psnr": 29.233993205202083,
+      "ssim": 0.9254637611427108,
+      "edge_precision": 0.7926758304028243,
+      "edge_recall": 0.9849530425035965,
+      "edge_f1": 0.877721677089883
+    },
+    "joint_bilateral": {
+      "rmse": 0.2818764878674148,
+      "mae": 0.13492967767342634,
+      "psnr": 31.480934225412636,
+      "ssim": 0.9599692438698506,
+      "edge_precision": 0.8906702122446369,
+      "edge_recall": 0.954723752169399,
+      "edge_f1": 0.9185120158056052
+    },
+    "guided": {
+      "rmse": 0.5726198122702914,
+      "mae": 0.32563509266583424,
+      "psnr": 25.283554174035224,
+      "ssim": 0.8356985085880879,
+      "edge_precision": 0.4968239110906803,
+      "edge_recall": 0.8920451868705787,
+      "edge_f1": 0.6317023067963312
+    },
+    "cnn": {
+      "rmse": 0.38976559153626145,
+      "mae": 0.14466415839524416,
+      "psnr": 28.479634587323382,
+      "ssim": 0.9166791597054084,
+      "edge_precision": 0.8833660667397432,
+      "edge_recall": 0.9571518930125804,
+      "edge_f1": 0.917632386794902
+    }
+  },
+  "visual_output": "D:\\EdgeDepth-AI\\sample_data\\results\\cnn_comparison.png"
+}
